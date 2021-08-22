@@ -1,0 +1,10 @@
+2)	Create docker container of same code
+Following are the step by step commands to create docker container on windows: 
+i.	docker pull mcr.microsoft.com/windows/nanoserver:1809
+ii.	docker images
+iii.	docker run -it mcr.microsoft.com/windows/nanoserver:1809 cmd.exe
+iv.	echo "Hello World!" > Hello.txt
+exit
+v.	docker ps -a
+vi.	docker commit  1e5d3d7ff90a helloworld
+ (NOTE: Unable to create container from the task one code)
